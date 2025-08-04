@@ -172,7 +172,7 @@ const ControlsSection: React.FC<{
     <div className="flex items-center gap-1 text-gray-500">
       <Filter size={16} /> Filter:
     </div>
-    {(['all', '', 'used'] as FilterMode[]).map((mode) => (
+    {(['all', 'valid', 'used'] as FilterMode[]).map((mode) => (
       <button
         key={mode}
         onClick={() => setFilter(mode)}
